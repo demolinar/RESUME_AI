@@ -162,6 +162,12 @@ project/
 Las contribuciones son bienvenidas. Por favor, crea un fork del repositorio y envía una solicitud de extracción (pull request).
 
 
+![alt text](https://github.com/demolinar/RESUME_AI/static/uploads/readme_images/0.png?raw=true)
+
+
+
+
+
 ## Licencia
 
 Este proyecto se distribuye bajo la licencia [MIT](LICENSE).
