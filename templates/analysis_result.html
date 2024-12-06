@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenAI Analysis Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            color: #333;
+            overflow-x: hidden;
+        }
+        h1, h2 {
+            color: #444;
+            text-align: center;
+        }
+        .ai-response-container {
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        a.back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #4285F4;
+        }
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>OpenAI Analysis Result</h1>
+    <h2>Prompt: {{ prompt }}</h2>
+
+    <div class="ai-response-container">
+        <h3>AI Response:</h3>
+        <div>{{ ai_response }}</div>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="{{ url_for('main.index') }}" class="back-link">Volver al inicio</a>
+    </div>
+</body>
+</html>

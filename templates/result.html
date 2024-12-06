@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracted Images and Text</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            color: #333;
+            overflow-x: hidden; /* Previene el scroll horizontal */
+        }
+        h1, h2, h3 {
+            color: #444;
+            margin: 20px 0 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        /* Mensajes flash */
+        .flash-message {
+            color: red;
+            margin-top: 20px;
+        }
+
+        /* Contenedor de las imágenes */
+        .image-container {
+            margin: 20px 0;
+        }
+        .image-container h2 {
+            text-align: center;
+        }
+
+        /* Galería de imágenes en modo flex */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Cada imagen */
+        .image-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 200px; /* ancho fijo para que se muestren lado a lado */
+            text-align: center;
+        }
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Contenedor de texto */
+        .text-container {
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap;     /* Mantiene saltos de línea */
+            word-break: break-all;      /* Rompe palabras muy largas */
+            overflow-wrap: break-word;  /* Otra opción para romper palabras largas */
+            max-height: 400px;          /* Altura máxima */
+            overflow-y: auto;           /* Scroll vertical si texto es largo */
+        }
+
+        /* Botón de descarga */
+        .download-link {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #34A853;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .download-link:hover {
+            background-color: #2C8E46;
+        }
+
+        /* Link para volver */
+        a.back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #4285F4;
+        }
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para una posible respuesta de OpenAI si la hubiera */
+        .openai-response {
+            margin-top: 40px;
+            background-color: #e8f0fe;
+            padding: 20px;
+            border: 1px solid #c6dafc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Extracted Images and Text</h1>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-message">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <div class="image-container">
+        <h2>Extracted Images</h2>
+        <div class="image-gallery">
+            {% for image in images %}
+                <div class="image-item">
+                    <h3>{{ image.filename }}</h3>
+                    <img src="data:{{ image.mimetype }};base64,{{ image.data }}" alt="{{ image.filename }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    <div class="text-container">
+        <h2>Extracted Text</h2>
+        <div>{{ extracted_text }}</div>
+    </div>
+    
+    <div style="text-align: center;">
+        <a href="{{ url_for('main.download_text', filename=txt_filename) }}" class="download-link">Download Extracted Text</a>
+    </div>
+    
+    <div style="text-align: center; margin-top:20px;">
+        <form action="{{ url_for('main.analyze_openai_text') }}" method="post">
+            <input type="hidden" name="txt_filename" value="{{ txt_filename }}">
+            <label for="prompt">Habilidades:</label>
+            <input type="text" id="prompt" name="prompt" placeholder="Ej: 'IA, CIENCIA DE DATOS, MLOPS...'" required>
+            <button type="submit" class="download-link" style="background-color:#007BFF;">OpenAI texto</button>
+        </form>
+    </div>
+    
+    <div style="text-align: center; margin-top:20px;">
+        <form action="{{ url_for('main.analyze_openai_text_images') }}" method="post">
+            <input type="hidden" name="txt_filename" value="{{ txt_filename }}">
+            <label for="prompt2">Habilidades:</label>
+            <input type="text" id="prompt2" name="prompt" placeholder="Ej: 'IA, CIENCIA DE DATOS, MLOPS...'" required>
+            <button type="submit" class="download-link" style="background-color:#28A745;">OpenAI Imagenes</button>
+        </form>
+    </div>
+
+
+    <div style="text-align: center;">
+        <a href="{{ url_for('main.index') }}" class="back-link">Upload Another PDF</a>
+    </div>

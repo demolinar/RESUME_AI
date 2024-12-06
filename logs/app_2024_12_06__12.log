@@ -1,0 +1,22 @@
+2024-12-06 12:38:09,876 - INFO - Inicio de la ruta /process
+2024-12-06 12:38:09,909 - INFO - Archivo PDF guardado en static/uploads\CV_DM_espanol.pdf
+2024-12-06 12:38:10,077 - INFO - Extraccion de imagenes y texto completada.
+2024-12-06 12:38:10,089 - INFO - Imagen convertida a base64: page_1.png
+2024-12-06 12:38:10,099 - INFO - Imagen convertida a base64: page_2.png
+2024-12-06 12:38:10,112 - INFO - Imagen convertida a base64: page_3.png
+2024-12-06 12:38:10,130 - INFO - Texto extraido leido correctamente.
+2024-12-06 12:38:18,692 - INFO - Inicio de la ruta /analyze_openai_text
+2024-12-06 12:38:20,064 - INFO - Inicio de la ruta /analyze_openai_text
+2024-12-06 12:38:20,304 - INFO - Respuesta API Open AI exitosa.
+2024-12-06 12:38:20,305 - INFO - Validacion Exitosa formato JSON API Open AI.
+2024-12-06 12:38:21,421 - INFO - Respuesta API Open AI exitosa.
+2024-12-06 12:38:21,421 - INFO - Validacion Exitosa formato JSON API Open AI.
+2024-12-06 12:38:42,512 - INFO - Inicio de la ruta /analyze_openai_text_images
+2024-12-06 12:38:47,442 - INFO - Respuesta API Open AI opcion 2 exitosa.
+2024-12-06 12:38:47,442 - INFO - Validacion Exitosa formato JSON API Open AI (opcion 2).
+2024-12-06 12:41:07,996 - INFO - Inicio de la ruta /analyze_openai_text
+2024-12-06 12:41:10,135 - INFO - Respuesta API Open AI exitosa.
+2024-12-06 12:41:10,135 - INFO - Validacion Exitosa formato JSON API Open AI.
+2024-12-06 12:41:35,769 - INFO - Inicio de la ruta /analyze_openai_text_images
+2024-12-06 12:41:41,030 - INFO - Respuesta API Open AI opcion 2 exitosa.
+2024-12-06 12:41:41,031 - INFO - Validacion Exitosa formato JSON API Open AI (opcion 2).
