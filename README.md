@@ -159,13 +159,9 @@ project/
 
 ## Imagenes Paso a Paso
 
-![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/0.png)
-![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/1.png)
-![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/2.png)
-![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/3.png)
-![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/4.png)
-![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/5.png)
-![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/6.png)
+![alt text](https://github.com/demolinar/WINE_CLASSIFICATION/blob/main/images/ml0.png)
+![alt text](https://github.com/demolinar/WINE_CLASSIFICATION/blob/main/images/ml1.png)
+![alt text](https://github.com/demolinar/WINE_CLASSIFICATION/blob/main/images/ml2.png)
 
 
 
