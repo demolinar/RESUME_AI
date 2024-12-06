@@ -157,12 +157,16 @@ project/
 
 
 
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, crea un fork del repositorio y envía una solicitud de extracción (pull request).
-
+## Imagenes Paso a Paso
 
 ![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/0.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/1.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/2.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/3.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/4.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/5.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/6.png)
+
 
 
 
