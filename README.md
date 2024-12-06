@@ -162,7 +162,7 @@ project/
 Las contribuciones son bienvenidas. Por favor, crea un fork del repositorio y envía una solicitud de extracción (pull request).
 
 
-![alt text](https://github.com/demolinar/RESUME_AI/static/uploads/readme_images/0.png?raw=true)
+![alt text]([https://github.com/demolinar/RESUME_AI/static/uploads/readme_images/0.png](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/0.png)?raw=true)
 
 
 
