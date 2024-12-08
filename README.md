@@ -60,11 +60,6 @@ OPENAI_API_KEY="tu_clave_api_de_openai"
 SECRET_KEY="una_clave_secreta_para_flask"  # Opcional, pero recomendado
 ```
 
-5. **Ejecutar la aplicación:**
-
-```bash
-flask run
-```
 
 ## Ejecución
 
@@ -122,7 +117,7 @@ Funciona de manera similar a la opción 1. Ingresa las palabras clave separadas 
 En ambos casos, el valor asociado a cada llave (excepto `EXPLICACION`) será `true` si la habilidad se detecta en el CV y `false` en caso contrario. La clave `EXPLICACION` siempre contendrá un resumen generado por la IA que describe las habilidades del candidato con más detalle.
 
 
-## Estructura del Proyecto (Ejemplo)
+## Estructura del Proyecto
 
 ```
 project/
@@ -159,10 +154,14 @@ project/
 
 ## Imagenes Paso a Paso
 
-![alt text](https://github.com/demolinar/WINE_CLASSIFICATION/blob/main/images/ml0.png)
-![alt text](https://github.com/demolinar/WINE_CLASSIFICATION/blob/main/images/ml1.png)
-![alt text](https://github.com/demolinar/WINE_CLASSIFICATION/blob/main/images/ml2.png)
 
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/0.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/1.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/2.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/3.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/4.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/5.png)
+![alt text](https://github.com/demolinar/RESUME_AI/blob/main/static/uploads/readme_images/6.png)
 
 
 
